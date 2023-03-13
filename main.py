@@ -14,7 +14,7 @@ def get_birthdays_per_week(users: list) -> None:
         try:
             birthday = person['birthday'].replace(year=current_date.year)
         except ValueError:
-            birthday = person['birthday'].replace(year=current_date.year)  # Leap Year error
+            birthday = person['birthday'].replace(year=current_date.year, day=28)  # Leap Year error
         weekday = birthday.strftime('%A')
         weekday_index = (birthday - current_date).days  # =0 for current day
         weekday_now = current_date.weekday()
