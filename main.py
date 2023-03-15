@@ -15,7 +15,7 @@ def get_fake_users(quantity: int, seed=None) -> list:
 
 def get_birthdays_per_week(users: list) -> None:
     today = date.today()
-    today = date(year=2023, month=3, day=20)
+    # today = date(year=2023, month=3, day=20)
     birthdays_this_week = {}
 
     # fill the dictionary with weekdays starting from current day
